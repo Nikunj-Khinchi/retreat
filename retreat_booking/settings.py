@@ -152,6 +152,7 @@ REST_FRAMEWORK = {
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
+    "https://wellness-retreat-ejya.vercel.app/"
 ]
 
 # Or for a more relaxed setting (not recommended for production)
