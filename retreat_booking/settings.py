@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-c0$im(0o#-&4_c=(d%l7&5m=%(ayxlco59=yocldil*r^2_e!d
 # DEBUG = os.environ.get('DEBUG', 'False').lower() == 'true'
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['retreat-9avn.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
