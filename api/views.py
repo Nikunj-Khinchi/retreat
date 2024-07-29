@@ -23,11 +23,11 @@ class RetreatDetailView(generics.RetrieveAPIView):  # Added view to retrieve a s
     serializer_class = RetreatSerializer
 
 class BookingListView(generics.ListCreateAPIView):
-    queryset = Booking.objects.all().order_by('-booking_date')
+    queryset = Booking.objects.all().order_by('booking_date')
     serializer_class = BookingSerializer
     filter_backends = [SearchFilter, DjangoFilterBackend]
-    search_fields = ['retreat__title', 'retreat__location']
-    filterset_fields = ['retreat']
+    # search_fields = ['retreat__title', 'retreat__location']
+    # filterset_fields = ['retreat']
     pagination_class = PageNumberPagination
 
 class BookingDetailView(generics.RetrieveUpdateDestroyAPIView):

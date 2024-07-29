@@ -145,14 +145,14 @@ REST_FRAMEWORK = {
     ],
     'DEFAULT_PAGINATION_CLASS': 'api.pagination.RetreatPagination',
     'PAGE_SIZE': 5,
-    # 'DEFAULT_RENDERER_CLASSES': [
-    #     'rest_framework.renderers.JSONRenderer',
-    # ],
+    'DEFAULT_RENDERER_CLASSES': [
+        'rest_framework.renderers.JSONRenderer',
+    ],
 }
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-    "https://wellness-retreat-ejya.vercel.app/"
+    "https://wellness-retreat-ejya.vercel.app"
 ]
 
 # Or for a more relaxed setting (not recommended for production)
